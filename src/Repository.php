@@ -68,6 +68,12 @@ abstract class Repository
     }
 
 
+    protected function idColumnName()
+    {
+        return 'id';
+    }
+
+
     protected function beforeSave(Record $record)
     {
         return true;
